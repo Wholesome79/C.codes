@@ -1,0 +1,46 @@
+/*
+C++ CLASSES AND OBJECTS
+
+Description: program to calculate the area and volume of a room.
+Name: Geoffrey Njenga Wanene
+Reg no: BCS-03-0006/2025
+Date:22/09/2025
+*/
+
+#include<iostream>
+using namespace std;
+
+class Cylinder{
+	
+	public:
+		
+//member variables		
+		double radius, height;
+
+//member functions	
+	double cylinder_area(){
+		return (2 * 3.142 *(radius * radius)) + (2 * 3.142 * radius * height);
+	}
+	
+	
+	double cylinder_volume(){
+		return 3.142 * (radius * radius) * height;
+	}
+};
+
+int main(){
+//object and variable declaration	
+	Cylinder cylinder1;
+	float surface_area, volume;
+	
+	cylinder1.radius = 7;
+	cylinder1.height = 42;
+	
+	surface_area = cylinder1.cylinder_area();
+	volume = cylinder1.cylinder_volume();
+	
+	cout<<"The area is = "<<surface_area<<endl;
+	cout<<"The volume is = "<<volume<<endl;
+	
+	return 0;
+}
