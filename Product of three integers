@@ -1,0 +1,39 @@
+/*
+Description: program to calculate the product of three given integers and return the same.
+Name: Geoffrey Njenga Wanene
+Reg no: BCS-03-0006/2025
+Date:22/09/2025
+*/
+
+#include<iostream>
+using namespace std;
+
+class Addition{
+	
+	public:
+		
+//member variables		
+		int a, b, c;
+
+//member functions	
+	int int_product(){
+		return a * b * c;
+	}
+	
+};
+
+int main(){
+//object and variable declaration	
+	Addition product1;
+	int Product;
+	
+	product1.a = 22;
+	product1.b = 30;
+	product1.c = 50;
+	
+	Product = product1.int_product();
+
+	cout<<"The product is = "<<Product<<endl;
+	
+	return 0;
+}
