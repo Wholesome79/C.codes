@@ -14,25 +14,24 @@ int main(){
  int sum = 0;
  
  //create a file
- ofstream Myfile ("C:\\Users\\Geoffrey\\OneDrive\\Desktop\\C++\\C++ codes\\array.txt ");
+ ofstream Myfile ("C:\\Users\\Geoffrey\\OneDrive\\Desktop\\C++\\C++ codes\\arrays.txt ");
  
  for(i=4; i>=0; i--){
  
  	cout<<score[i]<<endl;
 	 Myfile <<score[i]<<endl;
  	sum += score[i];
- 	
- 	
  	}
+	
 	cout<<"The sum is: "<<sum<<endl;
 	cout<<"Average: "<<sum/5<<endl;
 	
-	//write to a file
+		//write to a file
 	Myfile <<"The sum is: "<<sum<<endl;
 	Myfile <<"Average: "<<sum/5<<endl;
 	
-	//close the file
-	Myfile.close();		
+	//close a file
+	Myfile.close();
 	
  return 0;	
 }
